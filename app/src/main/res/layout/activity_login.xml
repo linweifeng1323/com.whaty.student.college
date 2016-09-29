@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+                <EditText
+                    android:id="@+id/domain_name"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:drawableLeft="@drawable/domain_name"
+                    android:hint="  请输入域名"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/username"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/user"
+                    android:hint="  请输入用户名"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/password"
+                    android:hint=" 请输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/confirmBt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/login_selector"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/remember_psw_checkbox"
+                        style="@style/hcCheckBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"
+                        android:text="   记住密码"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp" />
+
+                    <CheckBox
+                        android:id="@+id/auto_login_checkbox"
+                        style="@style/hcCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:checked="false"
+                        android:text="   自动登陆"
+                        android:textColor="@color/gray"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+</RelativeLayout>
